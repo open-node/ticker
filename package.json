@@ -1,0 +1,32 @@
+{
+  "name": "@open-node/ticker",
+  "version": "0.1.0",
+  "description": "log recorder, info and error",
+  "main": "src/ticker.js",
+  "scripts": {
+    "lint": "eslint ./src/*",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch src",
+    "readme": "d=`head -n 25 README.md` && (echo \"$d\n\n\n\" && documentation build src/** -f md) > README.md",
+    "release": "npm run readme && npm publish --registry=https://registry.npmjs.org --access=public",
+    "release:github": "npm run readme && npm publish --registry=https://npm.pkg.github.com/"
+  },
+  "pre-commit": ["lint", "test"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-node/ticker.git"
+  },
+  "keywords": ["heartbeat", "High availability", "availability"],
+  "author": "Redstone Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-node/ticker/issues"
+  },
+  "homepage": "https://github.com/open-node/ticker#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "async": "^3.1.0"
+  }
+}
