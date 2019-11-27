@@ -1,5 +1,5 @@
 # @open-node/ticker
-Record log info to logfile, info log by date, error log by error.code
+server availability status uphold, auto dependency detection
 
 [![Build status](https://travis-ci.com/open-node/ticker.svg?branch=master)](https://travis-ci.org/open-node/ticker)
 [![codecov](https://codecov.io/gh/open-node/ticker/branch/master/graph/badge.svg)](https://codecov.io/gh/open-node/ticker)
